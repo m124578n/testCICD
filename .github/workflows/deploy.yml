@@ -37,5 +37,5 @@ jobs:
             cd /home/ec2-user/testCICD
             git pull --ff-only
             source /home/ec2-user/venv/bin/activate
-            python manage.py runserver
+            python -V
             
