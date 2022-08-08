@@ -33,7 +33,10 @@ jobs:
           username: ec2-user
           # 執行部屬的指令
           script: |
-            sudo -s
-            cd ~
-            ls -a
+            whoami
+            cd /home/ec2-user/testCICD
+            pwd
+            git pull 
+            source /home/ec2-user/venv/bin/activate
+            python -V
             
