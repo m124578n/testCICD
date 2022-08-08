@@ -34,6 +34,8 @@ jobs:
           # 執行部屬的指令
           script: |
             sudo -s
-            cd /home
-            pwd
+            cd /home/ec2-user/testCICD
+            git pull --ff-only
+            source /home/ec2-user/venv/bin/activate
+            python manage.py runserver
             
