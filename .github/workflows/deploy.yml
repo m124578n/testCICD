@@ -33,7 +33,6 @@ jobs:
           username: ec2-user
           # 執行部屬的指令
           script: |
-            sudo -s
             whoami
             cd /home/ec2-user/testCICD
             pwd
