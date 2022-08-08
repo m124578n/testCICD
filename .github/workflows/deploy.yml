@@ -35,7 +35,8 @@ jobs:
           script: |
             sudo -s
             cd /home/ec2-user/testCICD
-            git pull --ff-only
+            pwd
+            git pull 
             source /home/ec2-user/venv/bin/activate
             python -V
             
